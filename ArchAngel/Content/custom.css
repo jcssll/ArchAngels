@@ -1,3 +1,55 @@
 ﻿div.navbar.navbar-inverse.navbar-fixed-top.archnav {
     background-color:#472e82 !important; 
 }
+p.signin-links {
+    color:black !important;
+}
+/*Archangels Online Shopping Text*/
+ a.navbar-brand {
+    color:#ffffff !important;
+}
+/*Nav Home | About | Contact | Register | Log In*/
+a {
+    color:#ffffff !important;
+}
+
+/*Home Page Text*/
+/*Title*/
+h1.masthead-main{
+    color:#ffffff !important;
+}
+p.lead{
+    color:#ffffff !important;
+}
+
+/* Background Image Transition*/
+div.jumbotron.mainPage {
+  /*
+  height: 90vh;
+  width: 90vw;
+  margin: 5vh 5vw;
+    */
+  background-color: #eee;
+  background-position: center;
+  background-size: cover;
+  
+  animation: image 19s infinite alternate;
+}
+
+@keyframes image {
+  0% {
+    background-image: url('https://cdn.shopify.com/s/files/1/0048/5657/8136/files/adult-couple-elderly-modified-official.jpg?91');
+  }
+  25% {
+    background-image: url('https://cdn.shopify.com/s/files/1/0048/5657/8136/files/adult-elderly-man-facial-hair-modified.jpg?91');
+  }
+   50% {
+    background-image: url('https://cdn.shopify.com/s/files/1/0048/5657/8136/files/beautiful-beauty-blurred-background-modified.jpg?92');
+  }
+    75% {
+    background-image: url('https://cdn.shopify.com/s/files/1/0048/5657/8136/files/facial-hair-headshot-man-1722198.jpg?92');
+  }
+     100% {
+    background-image: url('https://cdn.shopify.com/s/files/1/0048/5657/8136/files/afro-close-up-daylight-818819.jpg?92');
+  }
+}

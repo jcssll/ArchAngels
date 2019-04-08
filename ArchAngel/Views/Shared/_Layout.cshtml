@@ -18,16 +18,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <a href="/" class="navbar-brand">
+                    <img src="~/Content/images/logo-small.jpg" />
+                </a>
                 @Html.ActionLink("Archangels Online Shopping", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
                 
 
             </div>
             <div class="navbar-collapse collapse">
+                @using Microsoft.AspNet.Identity
+                @if (Request.IsAuthenticated) { 
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Shop", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Cart", "About", "Home")</li>
+                    <li>@Html.ActionLink("Profile", "Contact", "Home")</li>
                 </ul>
+                }
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
@@ -43,5 +49,6 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
 </body>
 </html>
