@@ -53,3 +53,6 @@ div.jumbotron.mainPage {
     background-image: url('https://cdn.shopify.com/s/files/1/0048/5657/8136/files/afro-close-up-daylight-818819.jpg?92');
   }
 }
+dd.a-change a{
+    color:#0026ff !important;
+}
