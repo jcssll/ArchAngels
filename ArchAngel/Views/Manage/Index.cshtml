@@ -11,7 +11,7 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>Password:</dt>
-        <dd>
+        <dd class="a-change">
             [
             @if (Model.HasPassword)
             {
@@ -23,11 +23,12 @@
             }
             ]
         </dd>
-        <dt>External Logins:</dt>
+        <!-- Removing External Login -->
+        <!--<dt>External Logins:</dt>
         <dd>
             @Model.Logins.Count [
             @Html.ActionLink("Manage", "ManageLogins") ]
-        </dd>
+        </dd>-->
         @*
             Phone Numbers can used as a second factor of verification in a two-factor authentication system.
              
@@ -56,7 +57,7 @@
                 }
             </dd>
         *@
-        <dt>Two-Factor Authentication:</dt>
+        <!--<dt>Two-Factor Authentication:</dt>
         <dd>
             <p>
                 There are no two-factor authentication providers configured. See <a href="http://go.microsoft.com/fwlink/?LinkId=403804">this article</a>
@@ -82,6 +83,6 @@
                         </text>
                     }
                 }*@
-        </dd>
+        </dd>-->
     </dl>
 </div>
